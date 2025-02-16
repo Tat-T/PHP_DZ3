@@ -1,5 +1,5 @@
 <?php
-require_once "db.php"; // Подключение к базе
+require_once "../db.php"; // Подключение к базе
 // Обработчик формы регистрации
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $pdo = connect($host, $user, $password, $dbname);

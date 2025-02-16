@@ -7,8 +7,8 @@
     <title>Регистрация</title>
 </head>
 <body class="bg-info-subtle">
-    <div>
-        <div class="row">
+    
+        <div class="container mt-5">
             <div class="row m-3">
                 <h2 class="text-info">Форма регистрации</h2>
             </div>
@@ -31,6 +31,6 @@
                 </div>
             </form>
         </div>
-    </div>
+    
 </body>
 </html>

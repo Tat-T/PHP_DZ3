@@ -29,3 +29,12 @@ D:\nginx\bin\php>php-cgi.exe -b 127.0.0.1:9123
 
 
 http://localhost/php_dz3/registration_form.php
+
+----------Задача 2
+
+CREATE TABLE Pictures (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name NVARCHAR(255) NOT NULL,  -- Название изображения
+    size INT NOT NULL,            -- Размер в байтах
+    imagepath NVARCHAR(255) NOT NULL -- Путь к файлу
+);

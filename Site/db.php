@@ -42,4 +42,20 @@ function createUsersTable($pdo) {
         echo "Ошибка создания таблицы: " . $e->getMessage();
     }
 }
+function createPicturesTable($pdo) {
+    $sql = "CREATE TABLE Pictures (
+        id INT IDENTITY(1,1) PRIMARY KEY,
+        name NVARCHAR(255) NOT NULL,
+        size INT NOT NULL,
+        imagepath NVARCHAR(255) NOT NULL
+    )";
+    
+    try {
+        $pdo->exec($sql);
+        echo "Таблица успешно создана.";
+    } catch (PDOException $e) {
+        echo "Ошибка создания таблицы: " . $e->getMessage();
+    }
+}
+
 ?>
